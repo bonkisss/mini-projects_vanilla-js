@@ -1,0 +1,86 @@
+:root {
+
+    /* COLOR */
+    --background: #131214;
+    --on-background-1: #5c526b;
+    --on-background-2: #525b6b;
+    --hover: #222124;
+    --field: #3E3D40;
+    --x: #B5A1E5;
+    --o: #3D81E7;
+
+    /* FONT WEIGHT */
+    --weight-regular: 400;
+    --weight-semiBold: 600;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.field {
+    border-collapse: collapse;
+}
+
+.field td {
+    width: 12rem;
+    height: 12rem;
+    border: 3px solid var(--field);
+    text-align: center;
+    font-size: 5rem;
+}
+
+.x {
+    color: var(--x);
+}
+
+.o {
+    color: var(--o);
+}
+
+.win-x {
+    background-color: var(--on-background-1);
+}
+
+.win-o {
+    background-color: var(--on-background-2);
+}
+
+.restart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: var(--field);
+    border-radius: 10px;
+    width: 10rem;
+    height: 3rem;
+    margin: 1rem auto;
+    cursor: pointer;
+}
+
+.winner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: 0.5rem;
+}
+
+.hover-effect:hover {
+    background-color: var(--hover); /* Определение цвета для ховера */
+}
